@@ -5,10 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meeran's Portfolio</title>
+
     <script src="https://cdn.tailwindcss.com"></script>
+
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <style>
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
@@ -33,61 +37,52 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-
-        .glow-dot {
-            position: absolute;
-            width: 2px;
-            height: 2px;
-            background: #10b981;
-            border-radius: 50%;
-            box-shadow: 0 0 10px 2px #10b981;
-        }
     </style>
-    <script type="importmap">
-{
-  "imports": {
-    "react": "https://esm.sh/react@^19.2.3",
-    "react/": "https://esm.sh/react@^19.2.3/"
-  }
-}
-</script>
 </head>
 
 <body class="selection:bg-emerald-500/30">
 
-    <!-- Simple Navigation -->
+    <!-- Navigation -->
     <nav
         class="fixed top-0 left-0 w-full z-50 px-6 py-6 flex justify-between items-center backdrop-blur-md bg-black/50">
-        <a href="#" class="text-white font-bold tracking-tighter text-xl">MHMI<span
-                class="text-emerald-500">.</span></a>
+        <a href="#" class="text-white font-bold tracking-tighter text-xl">
+            MHMI<span class="text-emerald-500">.</span>
+        </a>
+
         <div class="hidden md:flex gap-8 text-xs font-bold uppercase tracking-widest text-zinc-500">
             <a href="#about" class="hover:text-emerald-500 transition-colors">About</a>
             <a href="#skills" class="hover:text-emerald-500 transition-colors">Skills</a>
             <a href="#projects" class="hover:text-emerald-500 transition-colors">Projects</a>
             <a href="mailto:mdhajimeeran@gmail.com"
-                class="text-emerald-500 border border-emerald-500/20 px-4 py-1 rounded-full hover:bg-emerald-500 hover:text-black transition-all">Contact</a>
+                class="text-emerald-500 border border-emerald-500/20 px-4 py-1 rounded-full hover:bg-emerald-500 hover:text-black transition-all">
+                Contact
+            </a>
         </div>
     </nav>
 
     <main class="max-w-5xl mx-auto px-6 pt-32 pb-20 space-y-24">
 
-        <!-- Hero Section -->
+        <!-- Hero -->
         <section class="flex flex-col items-start gap-6">
             <div
                 class="inline-flex items-center gap-2 px-3 py-1 bg-emerald-500/10 border border-emerald-500/20 rounded-full">
                 <span class="w-1.5 h-1.5 bg-emerald-500 rounded-full animate-pulse"></span>
-                <span class="text-emerald-500 text-[10px] font-bold uppercase tracking-wider">Available for
-                    Internships</span>
+                <span class="text-emerald-500 text-[10px] font-bold uppercase tracking-wider">
+                    Available for Internships
+                </span>
             </div>
+
             <h1 class="text-6xl md:text-8xl font-extrabold text-white tracking-tighter leading-none">
                 Meeran's <br>
                 <span class="text-gradient">Meeran I</span>
             </h1>
-            <p class="max-w-xl text-lg text-zinc-400 font-light leading-relaxed">
-                Computer Science student at National Engineering College, learning Java-based system design, backend
-                fundamentals, and data structures.
-                Currently exploring the basics of machine learning and scalable systems.
+
+            <p class="text-xl text-white font-medium">
+                Computer Science student at National Engineering College, learning Java-based system design,
+                backend fundamentals, and data structures. Currently exploring the basics of machine learning
+                and scalable systems.
             </p>
+
             <div class="flex gap-4">
                 <a href="https://github.com/MohamedHajiMeeranI" target="_blank"
                     class="w-10 h-10 flex items-center justify-center rounded-xl bg-white/5 border border-white/10 hover:border-emerald-500 transition-colors">
@@ -100,182 +95,136 @@
             </div>
         </section>
 
-        <!-- Bento Grid Stats -->
+        <!-- Bento Grid -->
         <section id="about" class="grid grid-cols-1 md:grid-cols-4 gap-4">
+
+            <!-- Background -->
             <div class="bento-card md:col-span-3 p-8 rounded-3xl">
-                <h3 class="text-emerald-500 text-[10px] font-bold uppercase tracking-widest mb-4">Background</h3>
+                <h3 class="text-emerald-500 text-[10px] font-bold uppercase tracking-widest mb-4">
+                    Background
+                </h3>
                 <p class="text-xl text-white font-medium">
-                    I am a dedicated Computer Science student maintaining an <span class="text-emerald-500">8.01
-                        CGPA</span>.
-                    I am good in turning complex logic into efficient, clean code, enthusiastic in problem
-                    solving and programming.
+                    Dedicated Computer Science student maintaining an
+                    <span class="text-emerald-500">8.01 CGPA</span>,
+                    skilled in turning complex logic into efficient, clean code.
                 </p>
             </div>
+
+            <!-- LeetCode -->
             <div class="bento-card p-8 rounded-3xl flex flex-col justify-center items-center text-center">
+                 <h3 class="text-emerald-500 text-[10px] font-bold uppercase tracking-widest mb-4">
+                    Leetcode
+                </h3>
                 <span class="text-4xl font-black text-white">90+</span>
-                <span class="text-zinc-500 text-[10px] font-bold uppercase mt-1">LeetCode Problems</span>
+                <span class="text-zinc-500 text-[10px] font-bold uppercase mt-1">
+                 Problems Solved
+                </span>
             </div>
-            <div class="bento-card p-8 rounded-3xl md:col-span-2">
-                <h3 class="text-zinc-500 text-[10px] font-bold uppercase tracking-widest mb-4">Education</h3>
-                <div>
-                    <h4 class="text-white font-bold">National Engineering College</h4>
-                    <p class="text-zinc-500 text-sm">B.E Computer Science | 2023 - 2027</p>
-                </div>
+
+            <!-- Education (SMALLER) -->
+            <div class="bento-card p-8 rounded-3xl md:col-span-1">
+                <h3 class="text-emerald-500 text-[10px] font-bold uppercase tracking-widest mb-4">
+                    Education
+                </h3>
+                <h4 class="text-white font-bold">National Engineering College</h4>
+                <p class="text-zinc-500 text-sm">B.E Computer Science</p>
+                <p class="text-zinc-500 text-sm">2023 – 2027</p>
             </div>
-            <div class="bento-card p-8 rounded-3xl md:col-span-2">
-                <h3 class="text-zinc-500 text-[10px] font-bold uppercase tracking-widest mb-4">NPTEL Certifications</h3>
-                <div class="flex flex-wrap gap-2">
-                    <span class="px-3 py-1.5 bg-zinc-800 text-zinc-300 rounded-lg text-sm">Technical English
-                        For Engineers</span>
-                    <span class="px-3 py-1.5 bg-zinc-800 text-zinc-300 rounded-lg text-sm">Joy of Computing
+
+            <!-- NPTEL (BIGGER) -->
+            <div class="bento-card p-8 rounded-3xl md:col-span-3">
+                <h3 class="text-emerald-500 text-[10px] font-bold uppercase tracking-widest mb-4">
+                    NPTEL Certifications
+                </h3>
+
+                <div class="flex flex-wrap gap-4 mt-2">
+                    <span class="px-4 py-2 bg-zinc-800 text-zinc-300 rounded-xl text-sm">
+                        Technical English For Engineers
                     </span>
-                    <span class="px-3 py-1.5 bg-zinc-800 text-zinc-300 rounded-lg text-sm">Introduction to
-                        Iot</span>
-                    <span class="px-3 py-1.5 bg-zinc-800 text-zinc-300 rounded-lg text-sm">Introduction to
-                        Cloud Computing</span>
-                </div>
-                <div>
-                    <span class="text-zinc-500 text-sm">Introduction to
-                        Machine Learning</span>
-                    <span class="text-zinc-500 text-sm">Introduction to
-                        LLM</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="space-y-8">
-            <h2 class="text-3xl font-bold text-white tracking-tight">Technical Arsenal</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="space-y-4">
-                    <h4 class="text-xs font-bold text-zinc-500 uppercase tracking-widest">Languages</h4>
-                    <div class="flex flex-wrap gap-2">
-                        <span
-                            class="px-3 py-1.5 bg-emerald-500/5 text-emerald-500 border border-emerald-500/20 rounded-lg text-sm">Java</span>
-                        <span
-                            class="px-3 py-1.5 bg-emerald-500/5 text-emerald-500 border border-emerald-500/20 rounded-lg text-sm">C++</span>
-                        <span
-                            class="px-3 py-1.5 bg-emerald-500/5 text-emerald-500 border border-emerald-500/20 rounded-lg text-sm">SQL</span>
-                        <span
-                            class="px-3 py-1.5 bg-emerald-500/5 text-emerald-500 border border-emerald-500/20 rounded-lg text-sm">JS</span>
-                    </div>
-                </div>
-                <div class="space-y-4">
-                    <h4 class="text-xs font-bold text-zinc-500 uppercase tracking-widest">Frameworks</h4>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1.5 bg-zinc-800 text-zinc-300 rounded-lg text-sm">React</span>
-                        <span class="px-3 py-1.5 bg-zinc-800 text-zinc-300 rounded-lg text-sm">Node</span>
-                        <span class="px-3 py-1.5 bg-zinc-800 text-zinc-300 rounded-lg text-sm">SpringBoot</span>
-                    </div>
-                </div>
-                <div class="space-y-4">
-                    <h4 class="text-xs font-bold text-zinc-500 uppercase tracking-widest">Domains</h4>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1.5 bg-zinc-800 text-zinc-300 rounded-lg text-sm">Full Stack</span>
-                        <span class="px-3 py-1.5 bg-zinc-800 text-zinc-300 rounded-lg text-sm">Computational
-                            Intelligence</span>
-                    </div>
+                    <span class="px-4 py-2 bg-zinc-800 text-zinc-300 rounded-xl text-sm">
+                        Joy of Computing
+                    </span>
+                    <span class="px-4 py-2 bg-zinc-800 text-zinc-300 rounded-xl text-sm">
+                        Introduction to IoT
+                    </span>
+                    <span class="px-4 py-2 bg-zinc-800 text-zinc-300 rounded-xl text-sm">
+                        Introduction to Cloud Computing
+                    </span>
+                    <span class="px-4 py-2 bg-zinc-800 text-zinc-300 rounded-xl text-sm">
+                        Introduction to Machine Learning
+                    </span>
+                    <span class="px-4 py-2 bg-zinc-800 text-zinc-300 rounded-xl text-sm">
+                        Introduction to LLM
+                    </span>
                 </div>
             </div>
+
         </section>
+        <div class="bento-card p-8 rounded-3xl md:col-span-1">
+            <h2 class="text-emerald-500 text-[10px] font-bold uppercase tracking-widest mb-4">
+                Internships and Other certifications
+            </h2>
+            <span class="px-3 py-1.5 bg-zinc-800 text-zinc-300 rounded-lg text-sm">Prodigy (Machine Learning)</span>
+            <span class="px-3 py-1.5 bg-zinc-800 text-zinc-300 rounded-lg text-sm">Infosis SpringBoard Certificate on completing DBMS course</span>
 
-        <!-- Projects Section -->
-        <section id="projects" class="space-y-8">
-            <h2 class="text-3xl font-bold text-white tracking-tight">My Projects</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <a href="https://github.com/MohamedHajiMeeranI" target="_blank"
-                    class="bento-card p-10 rounded-[2rem] group">
-                    <div
-                        class="w-12 h-12 bg-emerald-500/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-emerald-500 group-hover:text-black transition-all">
-                        <i class="fas fa-wallet"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-white mb-3">Expense Tracker</h3>
-                    <p class="text-zinc-500 font-light leading-relaxed mb-6">A full-stack SpringBoot application
-                        designed for financial management with robust backend logic.</p>
-                    <div class="flex gap-2">
-                        <span
-                            class="text-[9px] font-bold uppercase tracking-widest text-zinc-400 bg-white/5 px-2 py-1 rounded">HTML
-                            & Css</span>
+        </div>
 
-                        <span
-                            class="text-[9px] font-bold uppercase tracking-widest text-zinc-400 bg-white/5 px-2 py-1 rounded">Java</span>
-                        <span
-                            class="text-[9px] font-bold uppercase tracking-widest text-zinc-400 bg-white/5 px-2 py-1 rounded">SpringBoot</span>
-                    </div>
-                </a>
-                <a href="https://github.com/MohamedHajiMeeranI" target="_blank"
-                    class="bento-card p-10 rounded-[2rem] group">
-                    <div
-                        class="w-12 h-12 bg-emerald-500/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-emerald-500 group-hover:text-black transition-all">
-                        <i class="fas fa-file-invoice-dollar"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-white mb-3">Payslip Generator</h3>
-                    <p class="text-zinc-500 font-light leading-relaxed mb-6">A Console based Automation tool for
-                        generating professional payroll documents from raw employee datasets.</p>
-                    <div class="flex gap-2">
-                        <span
-                            class="text-[9px] font-bold uppercase tracking-widest text-zinc-400 bg-white/5 px-2 py-1 rounded">C++</span>
-                        <span
-                            class="text-[9px] font-bold uppercase tracking-widest text-zinc-400 bg-white/5 px-2 py-1 rounded">Object
-                            Oriented Programming</span>
-                    </div>
-                </a>
-                <a href="https://github.com/MohamedHajiMeeranI" target="_blank"
-                    class="bento-card p-10 rounded-[2rem] group">
-                    <div
-                        class="w-12 h-12 bg-emerald-500/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-emerald-500 group-hover:text-black transition-all">
-                        <i class="fas fa-file-invoice-dollar"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-white mb-3">NeedFeed</h3>
-                    <p class="text-zinc-500 font-light leading-relaxed mb-6">NeedFeed is a web-based platform designed
-                        to reduce food waste by connecting surplus food providers with NGOs and individuals in need.
-                        The project focuses on efficient food listing, discovery, and coordination using modern web
-                        technologies.</p>
-                    <div class="flex gap-2">
-                        <span
-                            class="text-[9px] font-bold uppercase tracking-widest text-zinc-400 bg-white/5 px-2 py-1 rounded">HTML
-                            & Css</span>
+        <!-- Skills -->
+    
+<section id="skills" class="space-y-8">
 
-                        <span
-                            class="text-[9px] font-bold uppercase tracking-widest text-zinc-400 bg-white/5 px-2 py-1 rounded">React</span>
-                        <span
-                            class="text-[9px] font-bold uppercase tracking-widest text-zinc-400 bg-white/5 px-2 py-1 rounded">Node
-                            and Express</span>
-                    </div>
-                </a>
+    <h3 class="text-emerald-500 text-[10px] font-bold uppercase tracking-widest">
+        Technical Arsenal
+    </h3>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <!-- Languages -->
+        <div class="bento-card p-6 rounded-3xl space-y-4">
+            <h4 class="text-white font-bold">Languages</h4>
+            <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1.5 bg-zinc-800 text-zinc-300 rounded-lg text-sm">Java</span>
+                <span class="px-3 py-1.5 bg-zinc-800 text-zinc-300 rounded-lg text-sm">C++</span>
+                <span class="px-3 py-1.5 bg-zinc-800 text-zinc-300 rounded-lg text-sm">SQL</span>
+                <span class="px-3 py-1.5 bg-zinc-800 text-zinc-300 rounded-lg text-sm">JS</span>
             </div>
-        </section>
+        </div>
+
+        <!-- Frameworks -->
+        <div class="bento-card p-6 rounded-3xl space-y-4">
+            <h4 class="text-white font-bold">Frameworks</h4>
+            <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1.5 bg-zinc-800 text-zinc-300 rounded-lg text-sm">React</span>
+                <span class="px-3 py-1.5 bg-zinc-800 text-zinc-300 rounded-lg text-sm">Node</span>
+                <span class="px-3 py-1.5 bg-zinc-800 text-zinc-300 rounded-lg text-sm">Spring Boot</span>
+            </div>
+        </div>
+
+        <!-- Domains -->
+        <div class="bento-card p-6 rounded-3xl space-y-4">
+            <h4 class="text-white font-bold">Domains</h4>
+            <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1.5 bg-zinc-800 text-zinc-300 rounded-lg text-sm">Full Stack</span>
+                <span class="px-3 py-1.5 bg-zinc-800 text-zinc-300 rounded-lg text-sm">
+                    Computational Intelligence
+                </span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
 
     </main>
 
     <footer class="border-t border-white/5 py-12">
-        <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
-            <p class="text-zinc-500 text-xs font-medium uppercase tracking-[0.3em]">&copy; 2024 Meeran's Portfolio
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <p class="text-zinc-500 text-xs font-medium uppercase tracking-[0.3em]">
+                © 2024 Meeran's Portfolio
             </p>
-            <div class="flex gap-8 text-xs font-bold uppercase tracking-widest">
-                <a href="mailto:mdhajimeeran@gmail.com" class="hover:text-emerald-500 transition-colors">Email</a>
-                <a href="https://github.com/MohamedHajiMeeranI" target="_blank"
-                    class="hover:text-emerald-500 transition-colors">Github</a>
-            </div>
         </div>
     </footer>
 
-    <script>
-        // Smooth reveal animation on scroll
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('opacity-100', 'translate-y-0');
-                    entry.target.classList.remove('opacity-0', 'translate-y-8');
-                }
-            });
-        }, { threshold: 0.1 });
-
-        document.querySelectorAll('section').forEach(section => {
-            section.classList.add('opacity-0', 'translate-y-8', 'transition-all', 'duration-700', 'ease-out');
-            observer.observe(section);
-        });
-    </script>
 </body>
 
 </html>
