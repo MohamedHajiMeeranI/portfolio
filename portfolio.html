@@ -37,14 +37,32 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+
+        /* Unified section heading */
+        .section-heading {
+            font-size: 0.875rem; /* text-sm */
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: #10b981;
+        }
+
+        @media (min-width: 768px) {
+            .section-heading {
+                font-size: 1rem; /* text-base */
+            }
+        }
+
+        .bento-card:hover .section-heading {
+            color: #34d399;
+        }
     </style>
 </head>
 
 <body class="selection:bg-emerald-500/30">
 
     <!-- Navigation -->
-    <nav
-        class="fixed top-0 left-0 w-full z-50 px-6 py-6 flex justify-between items-center backdrop-blur-md bg-black/50">
+    <nav class="fixed top-0 left-0 w-full z-50 px-6 py-6 flex justify-between items-center backdrop-blur-md bg-black/50">
         <a href="#" class="text-white font-bold tracking-tighter text-xl">
             MHMI<span class="text-emerald-500">.</span>
         </a>
@@ -64,10 +82,9 @@
 
         <!-- Hero -->
         <section class="flex flex-col items-start gap-6">
-            <div
-                class="inline-flex items-center gap-2 px-3 py-1 bg-emerald-500/10 border border-emerald-500/20 rounded-full">
+            <div class="inline-flex items-center gap-2 px-3 py-1 bg-emerald-500/10 border border-emerald-500/20 rounded-full">
                 <span class="w-1.5 h-1.5 bg-emerald-500 rounded-full animate-pulse"></span>
-                <span class="text-emerald-500 text-[10px] font-bold uppercase tracking-wider">
+                <span class="text-emerald-500 text-[11px] font-bold uppercase tracking-wider">
                     Available for Internships
                 </span>
             </div>
@@ -77,32 +94,18 @@
                 <span class="text-gradient">Meeran I</span>
             </h1>
 
-            <p class="text-xl text-white font-medium">
+            <p class="text-xl text-white font-medium max-w-2xl">
                 Computer Science student at National Engineering College, learning Java-based system design,
                 backend fundamentals, and data structures. Currently exploring the basics of machine learning
                 and scalable systems.
             </p>
-
-            <div class="flex gap-4">
-                <a href="https://github.com/MohamedHajiMeeranI" target="_blank"
-                    class="w-10 h-10 flex items-center justify-center rounded-xl bg-white/5 border border-white/10 hover:border-emerald-500 transition-colors">
-                    <i class="fab fa-github text-white"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/mohamed-haji-meeran-i-29820934a" target="_blank"
-                    class="w-10 h-10 flex items-center justify-center rounded-xl bg-white/5 border border-white/10 hover:border-emerald-500 transition-colors">
-                    <i class="fab fa-linkedin-in text-white"></i>
-                </a>
-            </div>
         </section>
 
         <!-- Bento Grid -->
         <section id="about" class="grid grid-cols-1 md:grid-cols-4 gap-4">
 
-            <!-- Background -->
             <div class="bento-card md:col-span-3 p-8 rounded-3xl">
-                <h3 class="text-emerald-500 text-[10px] font-bold uppercase tracking-widest mb-4">
-                    Background
-                </h3>
+                <h3 class="section-heading mb-4">Background</h3>
                 <p class="text-xl text-white font-medium">
                     Dedicated Computer Science student maintaining an
                     <span class="text-emerald-500">8.01 CGPA</span>,
@@ -110,110 +113,82 @@
                 </p>
             </div>
 
-            <!-- LeetCode -->
             <div class="bento-card p-8 rounded-3xl flex flex-col justify-center items-center text-center">
-                 <h3 class="text-emerald-500 text-[10px] font-bold uppercase tracking-widest mb-4">
-                    Leetcode
-                </h3>
+                <h3 class="section-heading mb-3">Leetcode</h3>
                 <span class="text-4xl font-black text-white">90+</span>
-                <span class="text-zinc-500 text-[10px] font-bold uppercase mt-1">
-                 Problems Solved
+                <span class="text-zinc-500 text-xs font-bold uppercase mt-1">
+                    Problems Solved
                 </span>
             </div>
 
-            <!-- Education (SMALLER) -->
             <div class="bento-card p-8 rounded-3xl md:col-span-1">
-                <h3 class="text-emerald-500 text-[10px] font-bold uppercase tracking-widest mb-4">
-                    Education
-                </h3>
+                <h3 class="section-heading mb-4">Education</h3>
                 <h4 class="text-white font-bold">National Engineering College</h4>
                 <p class="text-zinc-500 text-sm">B.E Computer Science</p>
                 <p class="text-zinc-500 text-sm">2023 – 2027</p>
             </div>
 
-            <!-- NPTEL (BIGGER) -->
             <div class="bento-card p-8 rounded-3xl md:col-span-3">
-                <h3 class="text-emerald-500 text-[10px] font-bold uppercase tracking-widest mb-4">
-                    NPTEL Certifications
-                </h3>
-
-                <div class="flex flex-wrap gap-4 mt-2">
-                    <span class="px-4 py-2 bg-zinc-800 text-zinc-300 rounded-xl text-sm">
-                        Technical English For Engineers
-                    </span>
-                    <span class="px-4 py-2 bg-zinc-800 text-zinc-300 rounded-xl text-sm">
-                        Joy of Computing
-                    </span>
-                    <span class="px-4 py-2 bg-zinc-800 text-zinc-300 rounded-xl text-sm">
-                        Introduction to IoT
-                    </span>
-                    <span class="px-4 py-2 bg-zinc-800 text-zinc-300 rounded-xl text-sm">
-                        Introduction to Cloud Computing
-                    </span>
-                    <span class="px-4 py-2 bg-zinc-800 text-zinc-300 rounded-xl text-sm">
-                        Introduction to Machine Learning
-                    </span>
-                    <span class="px-4 py-2 bg-zinc-800 text-zinc-300 rounded-xl text-sm">
-                        Introduction to LLM
-                    </span>
+                <h3 class="section-heading mb-4">NPTEL Certifications</h3>
+                <div class="flex flex-wrap gap-4">
+                    <span class="px-4 py-2 bg-zinc-800 text-zinc-300 rounded-xl text-sm">Technical English For Engineers</span>
+                    <span class="px-4 py-2 bg-zinc-800 text-zinc-300 rounded-xl text-sm">Joy of Computing</span>
+                    <span class="px-4 py-2 bg-zinc-800 text-zinc-300 rounded-xl text-sm">Introduction to IoT</span>
+                    <span class="px-4 py-2 bg-zinc-800 text-zinc-300 rounded-xl text-sm">Introduction to Cloud Computing</span>
+                    <span class="px-4 py-2 bg-zinc-800 text-zinc-300 rounded-xl text-sm">Introduction to Machine Learning</span>
+                    <span class="px-4 py-2 bg-zinc-800 text-zinc-300 rounded-xl text-sm">Introduction to LLM</span>
                 </div>
             </div>
-
         </section>
-        <div class="bento-card p-8 rounded-3xl md:col-span-1">
-            <h2 class="text-emerald-500 text-[10px] font-bold uppercase tracking-widest mb-4">
-                Internships and Other certifications
-            </h2>
-            <span class="px-3 py-1.5 bg-zinc-800 text-zinc-300 rounded-lg text-sm">Prodigy (Machine Learning)</span>
-            <span class="px-3 py-1.5 bg-zinc-800 text-zinc-300 rounded-lg text-sm">Infosis SpringBoard Certificate on completing DBMS course</span>
 
-        </div>
-
-        <!-- Skills -->
-    
-<section id="skills" class="space-y-8">
-
-    <h3 class="text-emerald-500 text-[10px] font-bold uppercase tracking-widest">
-        Technical Arsenal
-    </h3>
-
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-
-        <!-- Languages -->
-        <div class="bento-card p-6 rounded-3xl space-y-4">
-            <h4 class="text-white font-bold">Languages</h4>
-            <div class="flex flex-wrap gap-2">
-                <span class="px-3 py-1.5 bg-zinc-800 text-zinc-300 rounded-lg text-sm">Java</span>
-                <span class="px-3 py-1.5 bg-zinc-800 text-zinc-300 rounded-lg text-sm">C++</span>
-                <span class="px-3 py-1.5 bg-zinc-800 text-zinc-300 rounded-lg text-sm">SQL</span>
-                <span class="px-3 py-1.5 bg-zinc-800 text-zinc-300 rounded-lg text-sm">JS</span>
-            </div>
-        </div>
-
-        <!-- Frameworks -->
-        <div class="bento-card p-6 rounded-3xl space-y-4">
-            <h4 class="text-white font-bold">Frameworks</h4>
-            <div class="flex flex-wrap gap-2">
-                <span class="px-3 py-1.5 bg-zinc-800 text-zinc-300 rounded-lg text-sm">React</span>
-                <span class="px-3 py-1.5 bg-zinc-800 text-zinc-300 rounded-lg text-sm">Node</span>
-                <span class="px-3 py-1.5 bg-zinc-800 text-zinc-300 rounded-lg text-sm">Spring Boot</span>
-            </div>
-        </div>
-
-        <!-- Domains -->
-        <div class="bento-card p-6 rounded-3xl space-y-4">
-            <h4 class="text-white font-bold">Domains</h4>
-            <div class="flex flex-wrap gap-2">
-                <span class="px-3 py-1.5 bg-zinc-800 text-zinc-300 rounded-lg text-sm">Full Stack</span>
+        <!-- Internships -->
+        <section class="bento-card p-8 rounded-3xl">
+            <h3 class="section-heading mb-4">Internships & Certifications</h3>
+            <div class="flex flex-wrap gap-3">
                 <span class="px-3 py-1.5 bg-zinc-800 text-zinc-300 rounded-lg text-sm">
-                    Computational Intelligence
+                    Prodigy (Machine Learning)
+                </span>
+                <span class="px-3 py-1.5 bg-zinc-800 text-zinc-300 rounded-lg text-sm">
+                    Infosys Springboard – DBMS
                 </span>
             </div>
-        </div>
+        </section>
 
-    </div>
-</section>
+        <!-- Skills -->
+        <section id="skills" class="space-y-8">
+            <h3 class="section-heading">Technical Arsenal</h3>
 
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                <div class="bento-card p-6 rounded-3xl space-y-4">
+                    <h4 class="text-white font-bold">Languages</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 bg-zinc-800 text-zinc-300 rounded-lg text-sm">Java</span>
+                        <span class="px-3 py-1.5 bg-zinc-800 text-zinc-300 rounded-lg text-sm">C++</span>
+                        <span class="px-3 py-1.5 bg-zinc-800 text-zinc-300 rounded-lg text-sm">SQL</span>
+                        <span class="px-3 py-1.5 bg-zinc-800 text-zinc-300 rounded-lg text-sm">JS</span>
+                    </div>
+                </div>
+
+                <div class="bento-card p-6 rounded-3xl space-y-4">
+                    <h4 class="text-white font-bold">Frameworks</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 bg-zinc-800 text-zinc-300 rounded-lg text-sm">React</span>
+                        <span class="px-3 py-1.5 bg-zinc-800 text-zinc-300 rounded-lg text-sm">Node</span>
+                        <span class="px-3 py-1.5 bg-zinc-800 text-zinc-300 rounded-lg text-sm">Spring Boot</span>
+                    </div>
+                </div>
+
+                <div class="bento-card p-6 rounded-3xl space-y-4">
+                    <h4 class="text-white font-bold">Domains</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 bg-zinc-800 text-zinc-300 rounded-lg text-sm">Full Stack</span>
+                        <span class="px-3 py-1.5 bg-zinc-800 text-zinc-300 rounded-lg text-sm">Computational Intelligence</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
 
     </main>
 
@@ -226,5 +201,4 @@
     </footer>
 
 </body>
-
 </html>
